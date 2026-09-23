@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Southern Precision Heating & Cooling | HVAC Repair & Installation in Sumrall, MS</title>
+<meta name="description" content="Owner-operated HVAC service in Sumrall, Hattiesburg, Laurel and Petal, MS. AC repair and installation, heating, heat pumps, duct work and emergency service. Call (601) 516-2725.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0e1a2b;
+    --navy-2: #16263d;
+    --navy-3: #22354f;
+    --ink: #111827;
+    --body: #3f4a5a;
+    --muted: #6b7584;
+    --line: #e3e7ec;
+    --line-2: #d4dae2;
+    --bg: #f6f7f9;
+    --white: #ffffff;
+    --accent: #0e1a2b;
+    --accent-2: #22354f;
+    --accent-soft: #fbeee7;
+    --star: #111827;
+    --radius: 6px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--body); background: var(--white); line-height: 1.65; font-size: 16px; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3, h4 { font-family: "Manrope", "Inter", system-ui, sans-serif; color: var(--ink); line-height: 1.15; letter-spacing: -0.02em; font-weight: 700; }
+  a { color: inherit; text-decoration: none; }
+  svg { display: block; flex: none; }
+  .wrap { max-width: 1160px; margin: 0 auto; padding-left: 28px; padding-right: 28px; }
+  .nowrap { white-space: nowrap; }
+
+  /* DEMO BAR: delete once paid */
+  .demo-bar { background: #000; color: #d6d9de; text-align: center; font-size: 12px; padding: 6px 12px; letter-spacing: .04em; }
+
+  /* Utility bar */
+  .util { background: var(--navy); color: #aeb8c6; font-size: 13px; }
+  .util .wrap { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-top: 9px; padding-bottom: 9px; }
+  .util-left { display: flex; gap: 28px; flex-wrap: wrap; }
+  .util-left span { display: inline-flex; align-items: center; gap: 8px; }
+  .util a:hover { color: #fff; }
+
+  /* Header */
+  header { background: var(--white); position: sticky; top: 0; z-index: 40; border-bottom: 1px solid var(--line); transition: box-shadow .2s; }
+  header.scrolled { box-shadow: 0 4px 20px rgba(14,26,43,.06); }
+  .head { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 16px; padding-bottom: 16px; }
+  .logo { display: flex; align-items: center; gap: 12px; }
+  .logo-mark { width: 40px; height: 40px; }
+  .logo-text { font-family: "Manrope", sans-serif; font-weight: 800; font-size: 17px; color: var(--navy); line-height: 1.1; letter-spacing: -0.01em; }
+  .logo-text small { display: block; font-weight: 600; font-size: 12px; color: var(--muted); letter-spacing: .02em; margin-top: 2px; }
+  nav.main { display: flex; gap: 32px; }
+  nav.main a { font-weight: 500; font-size: 15px; color: var(--ink); white-space: nowrap; padding: 4px 0; border-bottom: 1.5px solid transparent; transition: border-color .15s, color .15s; }
+  nav.main a:hover { border-color: var(--ink); }
+  .head-right { display: flex; align-items: center; gap: 22px; }
+  .head-phone { text-align: right; line-height: 1.2; }
+  .head-phone small { display: block; font-size: 12px; color: var(--muted); }
+  .head-phone b { font-family: "Manrope", sans-serif; font-size: 18px; color: var(--ink); font-weight: 700; white-space: nowrap; }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-family: "Inter", sans-serif; font-weight: 600; font-size: 15px; padding: 14px 24px; border-radius: var(--radius); border: 1px solid transparent; cursor: pointer; transition: background .15s, border-color .15s, color .15s; white-space: nowrap; }
+  .btn-accent { background: var(--accent); color: #fff; }
+  .btn-accent:hover { background: var(--accent-2); }
+  .hero .btn-accent, .emerg .btn-accent, .final .btn-accent { background: #fff; color: var(--navy); }
+  .hero .btn-accent:hover, .emerg .btn-accent:hover, .final .btn-accent:hover { background: #e6eaef; }
+  .hero .stars, .rev.feature .stars { color: #fff; }
+  .btn-dark { background: var(--navy); color: #fff; }
+  .btn-dark:hover { background: var(--navy-3); }
+  .btn-line-light { background: transparent; color: #fff; border-color: rgba(255,255,255,.35); }
+  .btn-line-light:hover { border-color: #fff; }
+  .btn-line { background: transparent; color: var(--ink); border-color: var(--line-2); }
+  .btn-line:hover { border-color: var(--ink); }
+  .head .btn { padding: 11px 18px; font-size: 14px; }
+
+  /* Hero */
+  .hero { background: var(--navy); color: #c9d2de; position: relative; overflow: hidden; }
+  .hero::after { content: ""; position: absolute; right: 0; top: 0; bottom: 0; width: 42%; background: linear-gradient(180deg, var(--navy-2), var(--navy)); border-left: 1px solid rgba(255,255,255,.05); }
+  .hero-inner { position: relative; z-index: 1; display: grid; grid-template-columns: 1.1fr .9fr; gap: 64px; align-items: center; padding-top: 88px; padding-bottom: 96px; }
+  .kicker { display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 600; color: #9fb0c4; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 22px; }
+  .kicker::before { content: ""; width: 28px; height: 1px; background: #9fb0c4; }
+  .hero h1 { color: #fff; font-size: clamp(38px, 5.2vw, 58px); font-weight: 700; letter-spacing: -0.03em; margin-bottom: 22px; }
+  .hero .lead { font-size: 18px; color: #b9c4d2; max-width: 540px; margin-bottom: 34px; }
+  .hero-btns { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 44px; }
+  .proof { display: flex; flex-wrap: wrap; gap: 0; border-top: 1px solid rgba(255,255,255,.12); padding-top: 24px; max-width: 560px; }
+  .proof div { padding-right: 28px; margin-right: 28px; border-right: 1px solid rgba(255,255,255,.12); }
+  .proof div:last-child { border-right: 0; margin-right: 0; padding-right: 0; }
+  .proof b { display: block; font-family: "Manrope", sans-serif; font-size: 22px; font-weight: 700; color: #fff; line-height: 1.2; }
+  .proof span { font-size: 13px; color: #97a3b4; }
+  .stars { color: var(--star); letter-spacing: 1px; font-size: 14px; }
+
+  /* Quote card */
+  .quote-card { background: var(--white); color: var(--body); border-radius: 8px; box-shadow: 0 24px 60px rgba(0,0,0,.28); }
+  .quote-head { padding: 28px 30px 0; }
+  .quote-head h2 { font-size: 22px; margin-bottom: 6px; }
+  .quote-head p { font-size: 14px; color: var(--muted); }
+  .quote-body { padding: 22px 30px 30px; }
+  .field { margin-bottom: 14px; }
+  .field label { display: block; font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 6px; }
+  .field input, .field select { width: 100%; font: inherit; font-size: 15px; padding: 11px 13px; border: 1px solid var(--line-2); border-radius: var(--radius); background: var(--white); color: var(--ink); transition: border-color .15s, box-shadow .15s; }
+  .field input:focus, .field select:focus { outline: none; border-color: var(--navy-3); box-shadow: 0 0 0 3px rgba(34,53,79,.12); }
+  .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .quote-body .btn { width: 100%; margin-top: 6px; padding: 14px; }
+  .form-note { font-size: 12.5px; color: var(--muted); margin-top: 12px; text-align: center; }
+  .thanks { display: none; padding: 48px 30px; text-align: center; }
+  .thanks .ok { width: 52px; height: 52px; border-radius: 50%; border: 1.5px solid #2f7a57; display: grid; place-items: center; margin: 0 auto 18px; }
+  .thanks h3 { font-size: 22px; margin-bottom: 8px; }
+  .thanks p { color: var(--muted); font-size: 15px; }
+  .sent .quote-head, .sent .quote-body { display: none; }
+  .sent .thanks { display: block; }
+
+  /* Stat band */
+  .stats { border-bottom: 1px solid var(--line); }
+  .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+  .stat { padding: 34px 24px; border-right: 1px solid var(--line); }
+  .stat:first-child { padding-left: 0; }
+  .stat:last-child { border-right: 0; }
+  .stat b { display: block; font-family: "Manrope", sans-serif; font-weight: 700; font-size: 32px; color: var(--ink); line-height: 1.1; letter-spacing: -0.02em; }
+  .stat span { font-size: 14px; color: var(--muted); }
+
+  /* Sections */
+  section { padding: 104px 0; }
+  .label { display: inline-block; font-size: 13px; font-weight: 600; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 14px; }
+  .sec-title { font-size: clamp(30px, 3.6vw, 42px); margin-bottom: 16px; }
+  .sec-lead { color: var(--muted); font-size: 17px; max-width: 600px; }
+  .sec-head { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: end; margin-bottom: 56px; }
+  .sec-head.single { display: block; max-width: 640px; }
+
+  /* Services */
+  .services { background: var(--bg); }
+  .svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .svc { background: var(--white); padding: 34px 32px 30px; display: flex; flex-direction: column; transition: background .2s; }
+  .svc:hover { background: #fcfcfd; }
+  .svc-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 22px; }
+  .svc-num { font-family: "Manrope", sans-serif; font-size: 13px; font-weight: 600; color: var(--muted); letter-spacing: .04em; }
+  .svc h3 { font-size: 20px; margin-bottom: 10px; }
+  .svc p { color: var(--muted); font-size: 15px; margin-bottom: 18px; }
+  .svc ul { list-style: none; margin-bottom: 22px; display: grid; gap: 7px; flex: 1; align-content: start; }
+  .svc li { font-size: 14px; color: var(--body); display: flex; gap: 10px; align-items: baseline; }
+  .svc li::before { content: ""; width: 10px; height: 1px; background: var(--muted); flex: none; transform: translateY(-4px); }
+  .svc-link { font-weight: 600; font-size: 14px; color: var(--ink); display: inline-flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--line-2); align-self: flex-start; padding-bottom: 2px; transition: border-color .15s, gap .15s; }
+  .svc-link:hover { border-color: var(--ink); gap: 11px; }
+  .svc.dark { background: var(--navy); }
+  .svc.dark h3 { color: #fff; }
+  .svc.dark p, .svc.dark li { color: #b3bfce; }
+  .svc.dark li::before { background: #7d8a9c; }
+  .svc.dark .svc-num { color: #8391a5; }
+  .svc.dark .svc-link { color: #fff; border-color: rgba(255,255,255,.3); }
+  .svc.wide { grid-column: 1 / -1; }
+
+  /* Emergency band */
+  .emerg { background: var(--navy-2); color: #c9d2de; padding: 0; border-top: 1px solid rgba(255,255,255,.08); }
+  .emerg .wrap { display: flex; align-items: center; justify-content: space-between; gap: 32px; padding-top: 40px; padding-bottom: 40px; flex-wrap: wrap; }
+  .emerg-left { display: flex; align-items: center; gap: 22px; }
+  .emerg-icon { width: 52px; height: 52px; border-radius: 50%; border: 1px solid rgba(255,255,255,.2); display: grid; place-items: center; }
+  .emerg h2 { color: #fff; font-size: clamp(22px, 2.6vw, 28px); margin-bottom: 4px; }
+  .emerg p { color: #a9b5c5; font-size: 15px; }
+
+  /* About */
+  .about-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 80px; align-items: start; }
+  .owner-panel { background: var(--navy); color: #c9d2de; border-radius: 8px; padding: 44px 40px; position: sticky; top: 110px; }
+  .owner-mono { width: 64px; height: 64px; border-radius: 50%; border: 1px solid rgba(255,255,255,.25); display: grid; place-items: center; font-family: "Manrope", sans-serif; font-weight: 700; font-size: 20px; color: #fff; margin-bottom: 24px; letter-spacing: .02em; }
+  .owner-panel h3 { color: #fff; font-size: 24px; margin-bottom: 4px; }
+  .owner-role { font-size: 14px; color: #97a3b4; margin-bottom: 30px; }
+  .owner-facts { list-style: none; border-top: 1px solid rgba(255,255,255,.12); }
+  .owner-facts li { display: flex; justify-content: space-between; gap: 20px; padding: 15px 0; border-bottom: 1px solid rgba(255,255,255,.12); font-size: 14.5px; }
+  .owner-facts li span:first-child { color: #97a3b4; }
+  .owner-facts li span:last-child { color: #fff; font-weight: 500; text-align: right; }
+  .about .body { color: var(--body); font-size: 17px; margin-bottom: 18px; max-width: 580px; }
+  .pull { border-left: 2px solid var(--accent); padding: 4px 0 4px 22px; margin: 34px 0 40px; max-width: 560px; }
+  .pull p { font-family: "Manrope", sans-serif; font-size: 20px; font-weight: 600; color: var(--ink); line-height: 1.45; letter-spacing: -0.01em; }
+  .pull small { display: block; font-size: 13px; color: var(--muted); margin-top: 10px; }
+  .why-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px; margin-bottom: 40px; border-top: 1px solid var(--line); }
+  .why-item { padding: 22px 0; border-bottom: 1px solid var(--line); }
+  .why-item h4 { font-size: 16px; margin-bottom: 4px; }
+  .why-item p { font-size: 14.5px; color: var(--muted); }
+
+  /* Process */
+  .process { background: var(--bg); }
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+  .step { border-top: 1px solid var(--line-2); padding-top: 28px; }
+  .step-num { font-family: "Manrope", sans-serif; font-size: 14px; font-weight: 700; color: var(--muted); margin-bottom: 16px; letter-spacing: .04em; }
+  .step h3 { font-size: 21px; margin-bottom: 10px; }
+  .step p { color: var(--muted); font-size: 15.5px; max-width: 320px; }
+
+  /* Reviews */
+  .rev-summary { display: flex; align-items: center; gap: 20px; justify-self: end; }
+  .rev-summary b { font-family: "Manrope", sans-serif; font-size: 48px; font-weight: 700; color: var(--ink); line-height: 1; letter-spacing: -0.03em; }
+  .rev-summary .stars { font-size: 16px; margin-bottom: 2px; }
+  .rev-summary span { font-size: 14px; color: var(--muted); }
+  .rev-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .rev { border: 1px solid var(--line); border-radius: 8px; padding: 30px; display: flex; flex-direction: column; background: var(--white); }
+  .rev .stars { margin-bottom: 18px; }
+  .rev p { font-size: 16px; color: var(--ink); line-height: 1.6; flex: 1; margin-bottom: 26px; }
+  .rev-who { display: flex; align-items: center; gap: 12px; }
+  .avatar { width: 38px; height: 38px; border-radius: 50%; background: var(--bg); border: 1px solid var(--line); display: grid; place-items: center; font-weight: 600; color: var(--ink); font-size: 14px; }
+  .rev-who b { display: block; font-size: 14.5px; color: var(--ink); font-weight: 600; }
+  .rev-who span { font-size: 13px; color: var(--muted); }
+  .rev.feature { grid-column: span 2; background: var(--navy); border-color: var(--navy); }
+  .rev.feature p { color: #fff; font-family: "Manrope", sans-serif; font-size: 24px; font-weight: 600; line-height: 1.45; letter-spacing: -0.01em; }
+  .rev.feature .avatar { background: transparent; border-color: rgba(255,255,255,.25); color: #fff; }
+  .rev.feature .rev-who b { color: #fff; }
+  .rev.feature .rev-who span { color: #97a3b4; }
+  .rev-cta { margin-top: 40px; text-align: center; }
+
+  /* Signs */
+  .signs { background: var(--bg); }
+  .signs-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 80px; align-items: start; }
+  .sign-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px; border-top: 1px solid var(--line-2); }
+  .sign-list li { display: flex; align-items: center; gap: 14px; padding: 18px 0; border-bottom: 1px solid var(--line-2); font-size: 15.5px; color: var(--ink); font-weight: 500; }
+
+  /* Areas */
+  .area-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+  .area-list { list-style: none; margin: 32px 0 36px; border-top: 1px solid var(--line); }
+  .area-list li { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-bottom: 1px solid var(--line); font-family: "Manrope", sans-serif; font-size: 18px; font-weight: 600; color: var(--ink); }
+  .area-list li span { font-family: "Inter", sans-serif; font-size: 13px; font-weight: 500; color: var(--muted); }
+  .map { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--bg); }
+  .map svg { width: 100%; height: auto; }
+
+  /* FAQ */
+  .faq { background: var(--bg); }
+  .faq-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 80px; align-items: start; }
+  details { border-bottom: 1px solid var(--line-2); }
+  details:first-of-type { border-top: 1px solid var(--line-2); }
+  summary { list-style: none; cursor: pointer; padding: 24px 0; font-family: "Manrope", sans-serif; font-weight: 600; font-size: 17px; color: var(--ink); display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+  summary::-webkit-details-marker { display: none; }
+  summary .plus { width: 16px; height: 16px; position: relative; flex: none; }
+  summary .plus::before, summary .plus::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1.5px; background: var(--ink); transition: transform .2s; }
+  summary .plus::after { transform: rotate(90deg); }
+  details[open] summary .plus::after { transform: rotate(0deg); }
+  details p { padding: 0 40px 26px 0; color: var(--muted); font-size: 15.5px; }
+
+  /* Final CTA */
+  .final { background: var(--navy); color: #c9d2de; }
+  .final-inner { display: grid; grid-template-columns: 1.2fr .8fr; gap: 48px; align-items: center; }
+  .final h2 { color: #fff; font-size: clamp(30px, 3.8vw, 44px); margin-bottom: 12px; }
+  .final p { color: #a9b5c5; font-size: 17px; }
+  .final .hero-btns { justify-content: flex-end; margin-bottom: 0; }
+
+  footer { background: #0a1320; color: #8a96a8; padding: 64px 0 28px; font-size: 14px; }
+  .foot-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,.08); }
+  footer h4 { color: #fff; font-size: 14px; font-weight: 600; margin-bottom: 16px; letter-spacing: 0; }
+  footer ul { list-style: none; display: grid; gap: 9px; }
+  footer a:hover { color: #fff; }
+  .foot-brand .logo-text { color: #fff; }
+  .foot-brand .logo-text small { color: #8a96a8; }
+  .foot-brand p { margin-top: 16px; max-width: 300px; }
+  .foot-bottom { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; padding-top: 24px; font-size: 13px; }
+
+  .call-bar { display: none; }
+
+  .reveal { opacity: 0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
+
+  @media (max-width: 1100px) { nav.main { display: none; } }
+  @media (max-width: 960px) {
+    .hero::after { display: none; }
+    .hero-inner, .about-grid, .signs-grid, .area-grid, .faq-grid, .final-inner, .sec-head { grid-template-columns: 1fr; }
+    .hero-inner { padding-top: 56px; padding-bottom: 64px; gap: 48px; }
+    .about-grid, .signs-grid, .area-grid, .faq-grid { gap: 48px; }
+    .sec-head { gap: 20px; }
+    .rev-summary { justify-self: start; }
+    .owner-panel { position: static; }
+    .svc-grid { grid-template-columns: 1fr 1fr; }
+    .svc.wide { grid-column: 1 / -1; }
+    .stats-grid { grid-template-columns: 1fr 1fr; }
+    .stat { padding: 26px 20px; }
+    .stat:nth-child(odd) { padding-left: 0; }
+    .stat:nth-child(2) { border-right: 0; }
+    .stat:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+    .rev-grid { grid-template-columns: 1fr 1fr; }
+    .steps { grid-template-columns: 1fr; gap: 28px; }
+    .final .hero-btns { justify-content: flex-start; }
+    .foot-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 640px) {
+    .wrap { padding-left: 18px; padding-right: 18px; }
+    .util .util-left span:not(:first-child), .util-right { display: none; }
+    .head { padding-top: 12px; padding-bottom: 12px; }
+    .head-phone, .head .btn { display: none; }
+    section { padding: 68px 0; }
+    .svc-grid, .rev-grid, .why-list, .sign-list { grid-template-columns: 1fr; }
+    .svc.wide, .rev.feature { grid-column: auto; }
+    .svc { padding: 28px 24px; }
+    .rev.feature p { font-size: 19px; }
+    .hero-btns .btn { flex: 1 1 100%; }
+    .proof { display: grid; grid-template-columns: repeat(3, 1fr); }
+    .proof div { padding: 0 10px; margin: 0; }
+    .proof div:first-child { padding-left: 0; }
+    .proof span { font-size: 12px; }
+    .proof b { font-size: 18px; }
+    .row2 { grid-template-columns: 1fr; gap: 0; }
+    .quote-head { padding: 24px 22px 0; }
+    .quote-body { padding: 18px 22px 24px; }
+    .owner-panel { padding: 32px 26px; }
+    .emerg-left { align-items: flex-start; }
+    .emerg .btn { width: 100%; }
+    .foot-grid { grid-template-columns: 1fr; }
+    details p { padding-right: 0; }
+    body { padding-bottom: 74px; }
+    .call-bar { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; background: var(--white); border-top: 1px solid var(--line); padding: 10px 12px; gap: 10px; }
+    .call-bar .btn { flex: 1; padding: 14px 10px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- DEMO BAR: remove this line when the site goes live -->
+<div class="demo-bar">Preview built for Southern Precision Heating &amp; Cooling</div>
+
+<div class="util">
+  <div class="wrap">
+    <div class="util-left">
+      <span>Emergency service available</span>
+      <span>Serving Sumrall, Hattiesburg, Petal &amp; Laurel</span>
+      <span>BBB Accredited · A+ Rating</span>
+    </div>
+    <div class="util-right"><a href="https://www.facebook.com/p/Southern-Precision-Heating-And-Cooling-LLC-100066850426329/" target="_blank" rel="noopener">Facebook</a></div>
+  </div>
+</div>
+
+<header id="hdr">
+  <div class="wrap head">
+    <a href="#top" class="logo" aria-label="Southern Precision Heating and Cooling, home">
+      <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <rect width="40" height="40" rx="6" fill="#0e1a2b"/>
+        <path d="M11 24.5c0-4.6 4-7.2 9-7.2s9 2.6 9 7.2" fill="none" stroke="#9fb0c4" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M14 29h12" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M20 10v4.5M14.5 12.5l1.8 3.2M25.5 12.5l-1.8 3.2" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <div class="logo-text">Southern Precision<small>Heating &amp; Cooling</small></div>
+    </a>
+    <nav class="main" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#areas">Service Area</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="head-right">
+      <a href="tel:+16015162725" class="head-phone"><small>Call us</small><b>(601) 516-2725</b></a>
+      <a href="#quote" class="btn btn-accent">Request Service</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero" id="top">
+  <div class="wrap hero-inner">
+    <div>
+      <div class="kicker">HVAC service in Sumrall, MS</div>
+      <h1>Heating and cooling done right, by people you can trust.</h1>
+      <p class="lead">Owner-operated heating and air conditioning for Sumrall and the Pine Belt. Repairs, new systems, and emergency service from a local business you can count on.</p>
+      <div class="hero-btns">
+        <a href="tel:+16015162725" class="btn btn-accent">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          <span class="nowrap">Call (601) 516-2725</span>
+        </a>
+        <a href="#services" class="btn btn-line-light">View Services</a>
+      </div>
+      <div class="proof">
+        <div><b>4.9 <span class="stars">★★★★★</span></b><span>50 Google reviews</span></div>
+        <div><b>A+</b><span>BBB accredited</span></div>
+        <div><b>2021</b><span>Locally owned since</span></div>
+      </div>
+    </div>
+
+    <div class="quote-card reveal" id="quote">
+      <div id="formbox">
+        <div class="quote-head">
+          <h2>Request service</h2>
+          <p>Tell us what's going on. We'll get right back to you.</p>
+        </div>
+        <div class="quote-body">
+          <form id="quoteForm" name="quote" method="POST">
+            <div class="row2">
+              <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+            </div>
+            <div class="field"><label for="address">Service address</label><input id="address" name="address" type="text" autocomplete="street-address" placeholder="Street and city" required></div>
+            <div class="field">
+              <label for="need">What do you need?</label>
+              <select id="need" name="need">
+                <option>AC not cooling</option>
+                <option>Heat not working</option>
+                <option>New system / replacement</option>
+                <option>Heat pump service</option>
+                <option>Duct work</option>
+                <option>Emergency, need help now</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-dark">Send request</button>
+            <p class="form-note">Your information stays private.</p>
+          </form>
+        </div>
+        <div class="thanks">
+          <div class="ok"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2f7a57" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></div>
+          <h3>Request received</h3>
+          <p>Thank you. We'll reach out shortly. For an emergency, call <a href="tel:+16015162725" class="nowrap" style="color:var(--ink);font-weight:600">(601) 516-2725</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat"><b>4.9 / 5</b><span>Google rating</span></div>
+      <div class="stat"><b>50</b><span>Google reviews</span></div>
+      <div class="stat"><b>4</b><span>Pine Belt towns served</span></div>
+      <div class="stat"><b>2021</b><span>Serving the Pine Belt since</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <div class="label">Services</div>
+        <h2 class="sec-title">Heating and cooling services</h2>
+      </div>
+      <p class="sec-lead">Whether it's a quick fix or a whole new system, you get the same careful, honest work every time.</p>
+    </div>
+    <div class="svc-grid reveal">
+      <div class="svc">
+        <div class="svc-top"><span class="svc-num">01</span></div>
+        <h3>AC Repair</h3>
+        <p>Warm air, strange noises, or water leaking? We find the real problem and fix it right.</p>
+        <ul><li>Not cooling or not turning on</li><li>Leaks and frozen coils</li><li>Strange noises</li></ul>
+        <a href="#quote" class="svc-link">Request service →</a>
+      </div>
+      <div class="svc">
+        <div class="svc-top"><span class="svc-num">02</span></div>
+        <h3>AC Installation</h3>
+        <p>Replacing a worn-out unit? We size and install a new system that fits your home.</p>
+        <ul><li>Complete system installs</li><li>Right-sized for your home</li><li>Clean, professional work</li></ul>
+        <a href="#quote" class="svc-link">Get a quote →</a>
+      </div>
+      <div class="svc">
+        <div class="svc-top"><span class="svc-num">03</span></div>
+        <h3>Heating</h3>
+        <p>Keep the cold out. We install new heating systems and get yours ready before winter.</p>
+        <ul><li>Heating system installs</li><li>Heating service</li><li>Ready before winter</li></ul>
+        <a href="#quote" class="svc-link">Request service →</a>
+      </div>
+      <div class="svc">
+        <div class="svc-top"><span class="svc-num">04</span></div>
+        <h3>Heat Pumps</h3>
+        <p>Heat pump not switching modes or running nonstop? We service and repair them year-round.</p>
+        <ul><li>Heat pump repair</li><li>Heat pump service</li><li>Year-round comfort</li></ul>
+        <a href="#quote" class="svc-link">Request service →</a>
+      </div>
+      <div class="svc">
+        <div class="svc-top"><span class="svc-num">05</span></div>
+        <h3>Duct Work</h3>
+        <p>Hot and cold rooms? Leaky or damaged ducts waste the air you're paying for.</p>
+        <ul><li>Duct work for new systems</li><li>Duct work for existing homes</li><li>Better airflow</li></ul>
+        <a href="#quote" class="svc-link">Get a quote →</a>
+      </div>
+      <div class="svc">
+        <div class="svc-top"><span class="svc-num">06</span></div>
+        <h3>Indoor Air</h3>
+        <p>We service central humidifiers, the whole-home systems that keep your indoor air comfortable.</p>
+        <ul><li>Central humidifier service</li><li>More comfortable air</li></ul>
+        <a href="#quote" class="svc-link">Request service →</a>
+      </div>
+      <div class="svc dark wide">
+        <div class="svc-top"><span class="svc-num">07</span></div>
+        <h3>Emergency Service</h3>
+        <p>AC out in August or heat out in January? Call and we'll get you taken care of as quickly as we can.</p>
+        <ul><li>No AC or no heat</li><li>Urgent breakdowns</li><li>Call for availability</li></ul>
+        <a href="tel:+16015162725" class="svc-link">Call (601) 516-2725 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EMERGENCY BAND -->
+<section class="emerg">
+  <div class="wrap">
+    <div class="emerg-left">
+      <div class="emerg-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg></div>
+      <div>
+        <h2>AC or heat out right now?</h2>
+        <p>Don't sweat it out. Call now for emergency service.</p>
+      </div>
+    </div>
+    <a href="tel:+16015162725" class="btn btn-accent"><span class="nowrap">Call (601) 516-2725</span></a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <aside class="owner-panel reveal">
+      <div class="owner-mono">CC</div>
+      <h3>Colby Candebat</h3>
+      <div class="owner-role">Owner, Southern Precision Heating &amp; Cooling</div>
+      <ul class="owner-facts">
+        <li><span>Based in</span><span>Sumrall, MS</span></li>
+        <li><span>In business since</span><span>2021</span></li>
+        <li><span>BBB rating</span><span>A+ Accredited</span></li>
+        <li><span>Google rating</span><span>4.9 (50 reviews)</span></li>
+        <li><span>Phone</span><span><a href="tel:+16015162725" class="nowrap">(601) 516-2725</a></span></li>
+      </ul>
+    </aside>
+
+    <div class="reveal">
+      <div class="label">About us</div>
+      <h2 class="sec-title">Local, owner-operated, and easy to work with.</h2>
+      <p class="body">Southern Precision Heating &amp; Cooling is a locally owned HVAC company based in Sumrall, serving the Pine Belt since 2021. Customers know us for showing up, explaining what's wrong in plain English, and charging fair prices.</p>
+      <p class="body">No call centers and no runaround. You deal directly with a local business that cares about its reputation.</p>
+      <div class="pull">
+        <p>"Colby was prompt, efficient, friendly and knows what he is doing."</p>
+        <small>Elaine B., review on Yelp</small>
+      </div>
+      <div class="why-list">
+        <div class="why-item"><h4>Owner-operated</h4><p>Hands-on service from start to finish.</p></div>
+        <div class="why-item"><h4>Fair prices</h4><p>"The best price around," says one customer.</p></div>
+        <div class="why-item"><h4>Explains the why</h4><p>You'll know exactly what was wrong.</p></div>
+        <div class="why-item"><h4>Right down the road</h4><p>Based here in Sumrall.</p></div>
+      </div>
+      <a href="#quote" class="btn btn-dark">Request Service</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+  <div class="wrap">
+    <div class="sec-head single reveal">
+      <div class="label">How it works</div>
+      <h2 class="sec-title">Comfortable again in three steps</h2>
+      <p class="sec-lead">No hoops to jump through. Here's what happens when you reach out.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="step-num">01</div><h3>Call or send a request</h3><p>Tell us what's going on with your system.</p></div>
+      <div class="step reveal"><div class="step-num">02</div><h3>We diagnose it</h3><p>We find the real problem and explain what's wrong and what your options are.</p></div>
+      <div class="step reveal"><div class="step-num">03</div><h3>Fixed right</h3><p>The job gets done cleanly and correctly, and your home is comfortable again.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <div class="label">Reviews</div>
+        <h2 class="sec-title" style="margin-bottom:0">What our customers say</h2>
+      </div>
+      <div class="rev-summary">
+        <b>4.9</b>
+        <div><div class="stars">★★★★★</div><span>Based on 50 Google reviews</span></div>
+      </div>
+    </div>
+    <div class="rev-grid">
+      <div class="rev feature reveal">
+        <div class="stars">★★★★★</div>
+        <p>"These guys are amazing... Colby was very courteous and polite, as well as very knowledgeable."</p>
+        <div class="rev-who"><div class="avatar">B</div><div><b>Brian B.</b><span>Review on HomeAdvisor</span></div></div>
+      </div>
+      <div class="rev reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Colby gave me the best price around without sacrificing quality! Definitely recommend him."</p>
+        <div class="rev-who"><div class="avatar">J</div><div><b>Jacob M.</b><span>Review on Yelp</span></div></div>
+      </div>
+      <div class="rev reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Excellent service! Colby was prompt, efficient, friendly and knows what he is doing."</p>
+        <div class="rev-who"><div class="avatar">E</div><div><b>Elaine B.</b><span>Review on Yelp</span></div></div>
+      </div>
+      <div class="rev reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Colby was very professional. Colby installed a complete HVAC system. Easy to work with."</p>
+        <div class="rev-who"><div class="avatar">K</div><div><b>Karen H.</b><span>Review on HomeAdvisor</span></div></div>
+      </div>
+      <div class="rev reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Excellent service. The technician explained ... why the AC was leaking and showed us how to fix it."</p>
+        <div class="rev-who"><div class="avatar">V</div><div><b>Vee D.</b><span>Review on HomeAdvisor</span></div></div>
+      </div>
+    </div>
+    <div class="rev-cta">
+      <a class="btn btn-line" href="https://www.google.com/search?q=southern+precision+heating+and+cooling+sumrall" target="_blank" rel="noopener">Read all 50 reviews on Google</a>
+    </div>
+  </div>
+</section>
+
+<!-- SIGNS -->
+<section class="signs" id="signs">
+  <div class="wrap signs-grid">
+    <div class="reveal">
+      <div class="label">Know the signs</div>
+      <h2 class="sec-title">Time to call a pro?</h2>
+      <p class="sec-lead" style="margin-bottom:32px">Small problems get expensive when they're ignored. If you notice any of these, give us a call before it turns into a breakdown.</p>
+      <a href="tel:+16015162725" class="btn btn-accent"><span class="nowrap">Call (601) 516-2725</span></a>
+    </div>
+    <ul class="sign-list reveal">
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Warm air from vents</li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Loud or strange noises</li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Power bill jumped</li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Water leaking near unit</li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Some rooms too hot or cold</li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Turns on and off a lot</li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Weak airflow</li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>System is 10+ years old</li>
+    </ul>
+  </div>
+</section>
+
+<!-- AREAS -->
+<section id="areas">
+  <div class="wrap area-grid">
+    <div class="reveal">
+      <div class="label">Service area</div>
+      <h2 class="sec-title">Proudly serving the Pine Belt</h2>
+      <p class="sec-lead">Based in Sumrall and serving homeowners across the surrounding area. Not sure if you're covered? Just call and ask.</p>
+      <ul class="area-list">
+        <li>Sumrall <span>Home base</span></li>
+        <li>Hattiesburg <span>Service area</span></li>
+        <li>Petal <span>Service area</span></li>
+        <li>Laurel <span>Service area</span></li>
+      </ul>
+      <a href="tel:+16015162725" class="btn btn-dark">Check My Area</a>
+    </div>
+    <div class="map reveal">
+      <svg viewBox="0 0 440 360" role="img" aria-label="Map showing Sumrall, Hattiesburg, Petal and Laurel in south Mississippi">
+        <rect width="440" height="360" fill="#f6f7f9"/>
+        <g stroke="#e3e7ec" stroke-width="1">
+          <path d="M0 60h440M0 120h440M0 180h440M0 240h440M0 300h440M60 0v360M120 0v360M180 0v360M240 0v360M300 0v360M360 0v360"/>
+        </g>
+        <g stroke="#cfd6df" stroke-width="3" fill="none" stroke-linecap="round">
+          <path d="M82 238 L 257 296"/>
+          <path d="M257 296 L 369 50"/>
+          <path d="M257 296 L 282 282"/>
+        </g>
+        <circle cx="225" cy="190" r="165" fill="rgba(14,26,43,.03)" stroke="#b9c2cd" stroke-width="1" stroke-dasharray="4 5"/>
+        <g font-family="Manrope, Inter, sans-serif" font-weight="700" font-size="13" fill="#0e1a2b" text-anchor="middle" letter-spacing="0.5">
+          <circle cx="82" cy="238" r="8" fill="#0e1a2b"/><circle cx="82" cy="238" r="16" fill="none" stroke="#0e1a2b" stroke-opacity=".3"/>
+          <text x="82" y="210">SUMRALL</text>
+          <circle cx="257" cy="296" r="6" fill="#0e1a2b"/>
+          <text x="245" y="324">HATTIESBURG</text>
+          <circle cx="284" cy="280" r="6" fill="#0e1a2b"/>
+          <text x="298" y="284" text-anchor="start">PETAL</text>
+          <circle cx="369" cy="50" r="6" fill="#0e1a2b"/>
+          <text x="369" y="78">LAUREL</text>
+        </g>
+        <text x="420" y="350" text-anchor="end" font-family="Inter, sans-serif" font-size="10.5" fill="#8a96a8">Approximate locations</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap faq-grid">
+    <div class="reveal">
+      <div class="label">FAQ</div>
+      <h2 class="sec-title">Frequently asked questions</h2>
+      <p class="sec-lead">Don't see your question here? Give us a call at <a href="tel:+16015162725" class="nowrap" style="color:var(--ink);font-weight:600">(601) 516-2725</a>.</p>
+    </div>
+    <div class="reveal">
+      <details open>
+        <summary>Do you offer emergency service?<span class="plus" aria-hidden="true"></span></summary>
+        <p>Yes. If your heat or AC goes out and you need help fast, call <span class="nowrap">(601) 516-2725</span> and we'll get you taken care of as soon as we can.</p>
+      </details>
+      <details>
+        <summary>What areas do you serve?<span class="plus" aria-hidden="true"></span></summary>
+        <p>We're based in Sumrall and serve Hattiesburg, Petal, Laurel and the surrounding Pine Belt area. If you're not sure we cover your address, give us a call.</p>
+      </details>
+      <details>
+        <summary>Should I repair my system or replace it?<span class="plus" aria-hidden="true"></span></summary>
+        <p>It depends on the age of the unit, what's wrong with it, and how much the repair costs. We'll look at your system and lay out your options so you can decide what makes sense for your home.</p>
+      </details>
+      <details>
+        <summary>Do you install complete new systems?<span class="plus" aria-hidden="true"></span></summary>
+        <p>Yes. We install full HVAC systems, including air conditioning, heating and duct work, sized to fit your home.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="wrap final-inner reveal">
+    <div>
+      <h2>Ready to get comfortable?</h2>
+      <p>Call now or send a quick request. We'll take it from there.</p>
+    </div>
+    <div class="hero-btns">
+      <a href="tel:+16015162725" class="btn btn-accent"><span class="nowrap">Call (601) 516-2725</span></a>
+      <a href="#quote" class="btn btn-line-light">Request Service</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="logo-text">Southern Precision<small>Heating &amp; Cooling</small></div>
+        <p>Locally owned heating and air conditioning service in Sumrall, MS. Serving the Pine Belt since 2021.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul><li><a href="#services">AC Repair</a></li><li><a href="#services">AC Installation</a></li><li><a href="#services">Heating</a></li><li><a href="#services">Heat Pumps</a></li><li><a href="#services">Duct Work</a></li></ul>
+      </div>
+      <div>
+        <h4>Service Area</h4>
+        <ul><li>Sumrall</li><li>Hattiesburg</li><li>Petal</li><li>Laurel</li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+16015162725" class="nowrap">(601) 516-2725</a></li>
+          <li>Sumrall, MS</li>
+          <li>Emergency service available</li>
+          <li><a href="https://www.facebook.com/p/Southern-Precision-Heating-And-Cooling-LLC-100066850426329/" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Southern Precision Heating &amp; Cooling LLC</span>
+      <span>Sumrall, Mississippi</span>
+    </div>
+  </div>
+</footer>
+
+<div class="call-bar">
+  <a href="tel:+16015162725" class="btn btn-accent">Call Now</a>
+  <a href="#quote" class="btn btn-line">Request Service</a>
+</div>
+
+<script>
+  // Quote form. Formspree link gets added here before going live.
+  var FORM_ENDPOINT = '';
+  document.getElementById('quoteForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var done = function () { document.getElementById('formbox').classList.add('sent'); };
+    if (!FORM_ENDPOINT) { done(); return; }
+    fetch(FORM_ENDPOINT, { method: 'POST', headers: { 'Accept': 'application/json' }, body: new FormData(this) }).then(done, done);
+  });
+
+  var hdr = document.getElementById('hdr');
+  window.addEventListener('scroll', function () { hdr.classList.toggle('scrolled', window.scrollY > 10); }, { passive: true });
+
+  var items = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, { threshold: 0.1 });
+    items.forEach(function (el) { io.observe(el); });
+  } else {
+    items.forEach(function (el) { el.classList.add('in'); });
+  }
+</script>
+</body>
+</html>
